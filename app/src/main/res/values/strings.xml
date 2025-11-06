@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RedAndBlue</string>
+    <string name="fab_add_description">Добавить новый элемент</string>
+</resources>
