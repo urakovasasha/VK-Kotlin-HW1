@@ -1,19 +1,14 @@
 package com.example.redandblue
 
 import android.content.res.Configuration
-import android.content.res.Resources
 import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.ComponentActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.view.ViewGroup
-import android.widget.FrameLayout
-import android.widget.ImageButton
-import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : ComponentActivity() {
     private lateinit var viewModel: MainViewModel
@@ -45,14 +40,7 @@ class MainActivity : ComponentActivity() {
         }
 
         setupAddButton()
-//        printScreenWidth()
     }
-
-//    private fun printScreenWidth(){
-//        val textView = findViewById<TextView>(R.id.textView2)
-//        textView.text = adapter.screenWidth.toString()
-//
-//    }
     private fun setupAddButton() {button = findViewById(R.id.button)
 
         button.setOnClickListener {
